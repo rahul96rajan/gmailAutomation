@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24654" started-at="2018-08-30T11:58:12Z" finished-at="2018-08-30T11:58:37Z">
+  <suite started-at="2018-08-30T16:31:37Z" name="Default suite" finished-at="2018-08-30T16:32:07Z" duration-ms="29735">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24654" started-at="2018-08-30T11:58:12Z" finished-at="2018-08-30T11:58:37Z">
-      <class name="com.google.gmailAutomation.testcases.LoginPagePasswordTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.google.gmailAutomation.testcases.LoginPagePasswordTest@27efef64]" name="setUp" is-config="true" duration-ms="23231" started-at="2018-08-30T11:58:12Z" finished-at="2018-08-30T11:58:36Z">
+    <test started-at="2018-08-30T16:31:37Z" name="Default test" finished-at="2018-08-30T16:32:07Z" duration-ms="29735">
+      <class name="com.google.gmailAutomation.testcases.InboxPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.google.gmailAutomation.testcases.InboxPageTest@57250572]" started-at="2018-08-30T16:31:37Z" name="setUp" finished-at="2018-08-30T16:31:47Z" duration-ms="10006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testEnterPwdAndNext()[pri:0, instance:com.google.gmailAutomation.testcases.LoginPagePasswordTest@27efef64]" name="testEnterPwdAndNext" duration-ms="1402" started-at="2018-08-30T11:58:36Z" finished-at="2018-08-30T11:58:37Z">
+        <test-method signature="testComposeAndSendMail()[pri:0, instance:com.google.gmailAutomation.testcases.InboxPageTest@57250572]" started-at="2018-08-30T16:31:47Z" name="testComposeAndSendMail" finished-at="2018-08-30T16:32:07Z" duration-ms="19708" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnterPwdAndNext -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.google.gmailAutomation.testcases.LoginPagePasswordTest@27efef64]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-08-30T11:58:37Z" finished-at="2018-08-30T11:58:37Z">
+        </test-method> <!-- testComposeAndSendMail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.google.gmailAutomation.testcases.InboxPageTest@57250572]" started-at="2018-08-30T16:32:07Z" name="tearDown" finished-at="2018-08-30T16:32:07Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.google.gmailAutomation.testcases.LoginPagePasswordTest -->
+      </class> <!-- com.google.gmailAutomation.testcases.InboxPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

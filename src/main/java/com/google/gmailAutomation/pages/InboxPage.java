@@ -24,19 +24,26 @@ public class InboxPage extends TestBase {
 	
 	@FindBy(xpath = "//div[contains(text(),'Send')]")
 	WebElement sendBtn;
+	
+	@FindBy(xpath = "//span[contains(text(),'Message')]")
+	WebElement sentMessageLabel;
 
 	public InboxPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void composeAndSendMail() {
+	public void composeAndSendMail(String to_id, String subject, String body) {
 		waitObj.until(ExpectedConditions.visibilityOf(composeBtn));
 		composeBtn.click();
 		waitObj.until(ExpectedConditions.visibilityOf(toTextField));
-		toTextField.sendKeys("rahul.rajan10101996@gmail.com");
-		subjectField.sendKeys("Test Subject");
-		messageBody.sendKeys("Test BODY");
+		toTextField.sendKeys(to_id);
+		subjectField.sendKeys(subject);
+		messageBody.sendKeys(body);
 		sendBtn.click();
+	}
+	
+	public boolean isSentMessageLabelPresent() {
+		return sentMessageLabel.isDisplayed();
 	}
 
 }

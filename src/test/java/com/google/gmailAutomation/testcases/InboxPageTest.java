@@ -1,6 +1,9 @@
 package com.google.gmailAutomation.testcases;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.google.gmailAutomation.base.TestBase;
 import com.google.gmailAutomation.pages.InboxPage;
@@ -20,7 +23,18 @@ public class InboxPageTest extends TestBase  {
 		initialization();
 		loginPageMail = new LoginPageEmail();
 		loginPagePwd = loginPageMail.enterUserNameAndNext();
-		inboxPage;
+		inboxPage = loginPagePwd.enterPwdAndNext();
+	}
+	
+	@Test(priority = 0)
+	public void testComposeAndSendMail() {
+		inboxPage.composeAndSendMail(prop.getProperty("to_id"),prop.getProperty("subject"),prop.getProperty("body"));
+		Assert.assertTrue(inboxPage.isSentMessageLabelPresent(), "Sent Message Label/Pop-Up is not generated.");
+	}
+	
+	@AfterMethod
+	public void tearDown(){
+//		driver.close();
 	}
 
 }
