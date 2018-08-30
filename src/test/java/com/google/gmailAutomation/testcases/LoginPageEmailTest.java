@@ -3,8 +3,8 @@ package com.google.gmailAutomation.testcases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.google.gmailAutomation.base.TestBase;
@@ -19,13 +19,13 @@ public class LoginPageEmailTest extends TestBase {
 		super();
 	}
 
-	@BeforeClass
+	@BeforeMethod
 	public void setUp() {
 		initialization();
 		loginPageMail = new LoginPageEmail();	
 	}
 	
-	@Test(priority = 0)
+	@Test
 	public LoginPagePassword testEnterUserNameAndNext() {
 		loginPageMail.enterUserNameAndNext();
 		waitObj.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Forgot password')]")));
@@ -34,7 +34,7 @@ public class LoginPageEmailTest extends TestBase {
 		return new LoginPagePassword();
 	}
 	
-	@AfterClass
+	@AfterMethod
 	public void tearDown() {
 //		driver.close();
 	}

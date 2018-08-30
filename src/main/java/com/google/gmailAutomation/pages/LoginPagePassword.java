@@ -20,7 +20,7 @@ public class LoginPagePassword extends TestBase {
 	}
 
 	public MyGoogleAccountPage enterPwdAndNext() {
-		pwdTextBox.sendKeys(prop.getProperty("mail_id"));
+		pwdTextBox.sendKeys(prop.getProperty("password"));
 		nextBtnPwd.click();
 		return new MyGoogleAccountPage();
 	}
