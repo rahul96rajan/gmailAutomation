@@ -20,11 +20,11 @@ public class LoginPagePassword extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	public MyGoogleAccountPage enterPwdAndNext() {
+	public InboxPage enterPwdAndNext() {
 		waitObj.until(ExpectedConditions.visibilityOf(pwdTextBox));
 		pwdTextBox.sendKeys(prop.getProperty("password"));
 		nextBtnPwd.click();
-		return new MyGoogleAccountPage();
+		return new InboxPage();
 	}
 
 }
