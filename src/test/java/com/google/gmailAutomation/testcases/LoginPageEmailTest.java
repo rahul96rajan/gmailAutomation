@@ -35,7 +35,7 @@ public class LoginPageEmailTest extends TestBase {
 	
 	@AfterMethod
 	public void tearDown() {
-//		driver.close();
+		driver.quit();
 	}
 	
 }

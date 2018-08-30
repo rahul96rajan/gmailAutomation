@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Gmail Test Automation Test Suite">
+	<test name="Gmail Test Cases">
+		<packages>
+			<package name="com.google.gmailAutomation.testcases" />
+		</packages>
+		<!-- <classes> <class name="com.google.gmailAutomation.testcases.LoginPageEmailTest"></class> 
+			<class name="com.google.gmailAutomation.testcases.LoginPagePasswordTest"></class> 
+			<class name="com.google.gmailAutomation.testcases.InboxPageTest"></class> 
+			</classes> -->
+	</test>
+</suite>

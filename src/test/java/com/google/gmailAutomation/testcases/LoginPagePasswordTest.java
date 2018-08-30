@@ -29,7 +29,7 @@ public class LoginPagePasswordTest extends TestBase{
 	
 	@AfterMethod
 	public void tearDown() {
-//		driver.close();
+		driver.quit();
 	}
 
 }
