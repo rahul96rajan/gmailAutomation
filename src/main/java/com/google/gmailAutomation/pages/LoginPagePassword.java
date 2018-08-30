@@ -3,6 +3,7 @@ package com.google.gmailAutomation.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.google.gmailAutomation.base.TestBase;
 
@@ -20,6 +21,7 @@ public class LoginPagePassword extends TestBase {
 	}
 
 	public MyGoogleAccountPage enterPwdAndNext() {
+		waitObj.until(ExpectedConditions.visibilityOf(pwdTextBox));
 		pwdTextBox.sendKeys(prop.getProperty("password"));
 		nextBtnPwd.click();
 		return new MyGoogleAccountPage();

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.google.gmailAutomation.testcases.LoginPageEmailTest">
+      <class name="com.google.gmailAutomation.testcases.LoginPagePasswordTest">
         <methods>
-          <include name="testEnterUserNameAndNext"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="testEnterPwdAndNext"/>
         </methods>
-      </class> <!-- com.google.gmailAutomation.testcases.LoginPageEmailTest -->
+      </class> <!-- com.google.gmailAutomation.testcases.LoginPagePasswordTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

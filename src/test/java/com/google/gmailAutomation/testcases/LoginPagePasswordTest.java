@@ -25,6 +25,7 @@ public class LoginPagePasswordTest extends TestBase{
 	@Test(priority = 0)
 	public void testEnterPwdAndNext() {
 		loginPagePwd.enterPwdAndNext();
+		System.out.println("Test case ran");
 	}
 	
 	@AfterMethod

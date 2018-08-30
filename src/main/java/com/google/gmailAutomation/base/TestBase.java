@@ -41,9 +41,9 @@ public class TestBase {
 		}
 		
 		driver.manage().deleteAllCookies();
+		driver.get(prop.getProperty("URL"));
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIME, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("URL"));
 		waitObj = new WebDriverWait(driver, 15);
 	}
 

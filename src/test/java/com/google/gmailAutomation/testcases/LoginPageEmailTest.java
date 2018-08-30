@@ -26,12 +26,11 @@ public class LoginPageEmailTest extends TestBase {
 	}
 	
 	@Test
-	public LoginPagePassword testEnterUserNameAndNext() {
+	public void testEnterUserNameAndNext() {
 		loginPageMail.enterUserNameAndNext();
 		waitObj.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Forgot password')]")));
 		Assert.assertTrue(driver.findElement(By.xpath("//span[contains(text(),'Forgot password')]")).isDisplayed(),
 				"Forgot Password link is not displayed");
-		return new LoginPagePassword();
 	}
 	
 	@AfterMethod

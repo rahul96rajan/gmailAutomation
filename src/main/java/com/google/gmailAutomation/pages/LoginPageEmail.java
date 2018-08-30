@@ -9,7 +9,7 @@ import com.google.gmailAutomation.base.TestBase;
 public class LoginPageEmail extends TestBase {
 
 	// Page Factory - Object Repository
-	@FindBy(xpath = "//input[@type='email']")
+	@FindBy(id = "identifierId")
 	WebElement emailTextBox;
 
 	@FindBy(id = "identifierNext")
